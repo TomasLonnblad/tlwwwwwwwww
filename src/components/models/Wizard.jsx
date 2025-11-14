@@ -19,12 +19,15 @@ const Wizard = React.memo(function Wizard(props) {
 
   return (
     <group
+
+
       {...props}
       dispose={null}
       ref={modelRef}
       position={[-1.057, -5, -5]}
-      scale={[0.06, 0.06, 0.06]}
-      rotation={[0.25, 0, 0]}
+      scale={[-0.01, 0.02, 0.009]}
+      rotation={[-0.60, -0.15, -0.19]}
+      
     >
 
 
