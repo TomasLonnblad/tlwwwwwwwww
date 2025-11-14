@@ -26,7 +26,7 @@ const Wizard = React.memo(function Wizard(props) {
       scale={[0.06, 0.06, 0.06]}
       rotation={[0.25, 0, 0]}
     >
-          <mesh
+ <mesh
             castShadow
             receiveShadow
             geometry={nodes.Material2002.geometry}
@@ -624,6 +624,31 @@ const Wizard = React.memo(function Wizard(props) {
             geometry={nodes.Material2101.geometry}
             material={materials.Merged_materials}
           />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_2.geometry}
+            material={materials['initialShadingGroup.001']}
+            position={[0, -3.867, 0]}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Object_2_008.geometry}
+            material={materials['initialShadingGroup.004']}
+            position={[0, 0.2, 3.867]}
+            rotation={[-Math.PI / 2, 0, 0]}
+          />
+        </group>
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Object_2002.geometry}
+        material={materials['initialShadingGroup.003']}
+        position={[0, -3.867, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+      />
     </group>
   );
 });
